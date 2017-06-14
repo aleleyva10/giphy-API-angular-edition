@@ -1,0 +1,25 @@
+{
+  "name": "giphy-api-angular-edition",
+  "version": "1.0.0",
+  "description": "Today you will revisit the Giphy API and use Angular's $http service to create a fun application.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleleyva10/giphy-API-angular-edition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleleyva10/giphy-API-angular-edition/issues"
+  },
+  "homepage": "https://github.com/aleleyva10/giphy-API-angular-edition#readme"
+}

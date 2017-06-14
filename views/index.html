@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy Api Angular Edition</title>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body ng-app='myApp'>
+  <div class="container">
+    <div class="row">
+      <div ng-controller='GiphyController as gc' class="col-sm-8 col-sm-offset-2">
+        <div class="panel panel-danger">
+          <h1>Giphy Api Angular Edition</h1>
+          <h3>Find Giphy</h3>
+          <input id='userInput' placeholder="Add Giphy" ng-model="gc.search">
+          <button ng-click='gc.getGiphy()'>Search</button>
+          <button ng-click='gc.randomGiphy()'>Random</button>
+        </div>
+        <div ng-show="gc.showGiphy" ng-repeat="item in gc.data">
+          <img ng-src="{{item.images.downsized.url}}" alt="">
+        </div>
+        <div ng-hide="gc.showGiphy">
+          <img ng-src="{{gc.giphyRandom}}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
